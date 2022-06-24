@@ -1,0 +1,65 @@
+.tourAnnouncement {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  .imgContainer {
+    width: 100%;
+    height: 550px;
+    position: relative;
+    text-align: center;
+    color: white;
+    .albumCover {
+      width: 100%;
+      height: 550px;
+      object-fit: cover;
+      object-position: center 75%;
+    }
+    .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-transform: uppercase;
+      font-family: "Helvetica";
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .tourName {
+        margin-bottom: 0;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 5px;
+      }
+
+      .bandName {
+        font-size: 80px;
+        font-weight: 500;
+        font-family: "SF Mono", Menlo, Consolas;
+        letter-spacing: 5px;
+        margin: 0;
+      }
+
+      .dates {
+        margin-top: 0;
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      .ticketsBtn {
+        padding: 11px 20px;
+        color: white;
+        font-weight: 800;
+        letter-spacing: 3px;
+        background-color: #25894c;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

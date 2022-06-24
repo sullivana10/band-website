@@ -1,0 +1,104 @@
+.album {
+  width: 100%;
+  padding: 130px 0;
+  display: flex;
+  justify-content: center;
+
+  .page-width {
+    max-width: 1420px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+  }
+
+  .albumCover {
+    width: 50%;
+    //height: 674.19px;
+    padding: 10px;
+    display: flex;
+
+    .albumImg {
+      width: 100%;
+      height: auto;
+      margin-bottom: auto;
+      display: flex;
+    }
+  }
+
+  .albumInfo {
+    width: 50%;
+    height: 100%;
+    padding-left: 62px;
+    font-family: "Helvetica";
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      text-transform: uppercase;
+      font-family: "SF Mono", Menlo, Consolas;
+      font-weight: 400;
+      letter-spacing: 3px;
+      margin: 0 0 20px 0;
+    }
+
+    .price {
+      margin: 0 0 25px;
+      color: #25894c;
+      font-size: 17px;
+    }
+
+    .releaseDate {
+      text-transform: uppercase;
+      margin-bottom: 50px;
+    }
+
+    .quantity {
+      margin-bottom: 50px;
+    }
+
+    .trackList {
+      text-transform: uppercase;
+    }
+
+    .songs {
+      line-height: 1.4;
+    }
+
+    .cart {
+      background-color: white;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 3px;
+      border: 1px solid;
+      padding: 13px 20px;
+      margin-bottom: 10px;
+      font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+      cursor: pointer;
+    }
+
+    .pay {
+      color: white;
+      background-color: black;
+      font-size: 14px;
+      padding: 13px 20px;
+      cursor: pointer;
+    }
+
+    .options {
+      text-align: center;
+    }
+
+    .installments {
+      font-size: 13px;
+      margin: 0;
+
+      span {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+}

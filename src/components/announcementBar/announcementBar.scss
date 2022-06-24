@@ -1,0 +1,43 @@
+.announcement-bar {
+  background-color: #25894c;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .page-width {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .announcement-link {
+      width: 100%;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      .text {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        font-size: 12px;
+        text-align: center;
+      }
+
+      .link-text {
+        padding: 0 0 0 5px;
+        font-size: 13px;
+        color: white;
+        text-decoration: underline;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
