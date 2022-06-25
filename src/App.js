@@ -8,6 +8,7 @@ import Cds from "./components/cds/Cds";
 import Video1 from "./components/video1/Video1";
 import Video2 from "./components/video2/Video2";
 import Apparel from "./components/apparel/Apparel";
+import News from "./components/news/News";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Video1 />
       <Apparel />
       <Video2 />
+      <News />
     </div>
   );
 }

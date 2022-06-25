@@ -1,0 +1,99 @@
+.news {
+  margin: 75px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .page-width {
+    width: 100%;
+    height: auto;
+    max-width: 1420px;
+    padding: 0 40px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .section-header {
+      width: 100%;
+      margin: 0 0 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-self: center;
+
+      .header-title {
+        width: 100%;
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 32px;
+        font-weight: 400;
+        font-family: "SF Mono", Menlo, Consolas;
+        letter-spacing: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .view {
+        width: fit-content;
+        padding: 8px 14px;
+        margin: 15px 0 0;
+        letter-spacing: 3px;
+        font-family: "Helvetica";
+        font-size: 12px;
+        text-transform: uppercase;
+        background-color: white;
+        border: 1px solid #25894c;
+        cursor: pointer;
+        display: flex;
+        align-self: center;
+
+        &:hover {
+          border: 1px solid black;
+        }
+      }
+    }
+
+    .content {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .container {
+        width: 100%;
+        height: auto;
+        margin: 0 0 30px;
+        padding: 0 22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .imgContainer {
+          width: 100%;
+          cursor: pointer;
+          img {
+            max-height: 460px;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+          }
+        }
+
+        .date {
+          margin: 15px 0 5px;
+          font-size: 12px;
+          font-family: "Helvetica";
+        }
+
+        .articleTitle {
+          margin: 0;
+          font-size: 17px;
+          font-family: "Helvetica";
+          text-align: center;
+        }
+      }
+    }
+  }
+}
