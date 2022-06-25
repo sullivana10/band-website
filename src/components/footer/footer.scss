@@ -1,0 +1,107 @@
+.footer {
+  padding: 60px 0;
+  border-top: 1px solid #25894c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .page-width {
+    width: 100%;
+    height: auto;
+    max-width: 1420px;
+    padding: 0 40px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .content {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .blank {
+        width: 10%;
+      }
+
+      .left {
+        width: 300px;
+        //margin-right: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        a {
+          padding: 4px 0;
+          //margin-bottom: 9px;
+          text-decoration: none;
+          font-size: 13px;
+          line-height: 23px;
+          font-family: "Helvetica";
+          color: black;
+        }
+      }
+
+      .right {
+        width: 300px;
+        //margin-left: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .signUp {
+          width: 100%;
+          font-size: 12px;
+          font-family: "Helvetica";
+          margin: 0 0 20px;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+        }
+
+        .subscribe {
+          width: 100%;
+          font-size: 13px;
+          font-family: "Helvetica";
+          margin: 0 0 15px;
+        }
+
+        .form {
+          position: relative;
+          // display: flex;
+          // flex-wrap: nowrap;
+        }
+
+        .submit {
+          //width: 20px;
+          // position: absolute;
+          transform: translateX(-57px);
+          // right: 485px;
+          // display: inline-block;
+        }
+
+        .email {
+          padding: 10px 45px 10px 0px;
+          max-width: 200px;
+          width: 100%;
+          border: 0;
+          outline: none;
+          border-bottom: 2px solid black;
+
+          &::placeholder {
+            color: black;
+            font-size: 12px;
+          }
+        }
+
+        .iconContainer {
+          margin-top: 30px;
+          display: flex;
+          .icon {
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
