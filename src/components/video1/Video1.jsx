@@ -18,7 +18,7 @@ export default function Video1() {
         <div className="text">
           <h1 className="songName">cold spots</h1>
           <p className="albumName">the latest single</p>
-          <a className="link" href="https://youtu.be/zGQeV71I5xg">
+          <div className="link">
             <button
               className="watch"
               onClick={(event) =>
@@ -28,7 +28,7 @@ export default function Video1() {
               <PlayArrowIcon />
               watch now
             </button>
-          </a>
+          </div>
         </div>
       </div>
     </div>

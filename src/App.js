@@ -6,6 +6,7 @@ import Tour from "./components/tour/Tour";
 import Album from "./components/album/Album";
 import Cds from "./components/cds/Cds";
 import Video1 from "./components/video1/Video1";
+import Video2 from "./components/video2/Video2";
 import Apparel from "./components/apparel/Apparel";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Cds />
       <Video1 />
       <Apparel />
+      <Video2 />
     </div>
   );
 }
