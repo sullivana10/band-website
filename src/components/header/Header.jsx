@@ -8,12 +8,17 @@ export default function Header() {
     <div className="header">
       <div className="page-width">
         <div className="top">
+          <div className="hamburger">
+            <span className="line1"></span>
+            <span className="line2"></span>
+            <span className="line3"></span>
+          </div>
           <div className="blank"></div>
           <div className="logo">
             <img src="assets/plain-logo.png" alt="logo" />
           </div>
           <div className="iconContainer">
-            <div className="icon">
+            <div className="icon icon__person">
               <PersonOutlineIcon sx={{ fontSize: 30 }} />
             </div>
             <div className="icon">
@@ -28,7 +33,7 @@ export default function Header() {
           <a href="/" className="intl">
             intl
           </a>
-          <a href="/" className="news">
+          <a href="/" className="news1">
             news
           </a>
           <a href="/" className="about">

@@ -1,10 +1,18 @@
 .header {
   width: 100%;
-  height: auto;
-  padding: 20px 0;
+  height: 100px;
+  padding: 10px 0;
+  background-color: white;
+  z-index: 1;
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media only screen and (max-width: 768px) {
+    height: 40px;
+  }
 
   .page-width {
     max-width: 1420px;
@@ -12,29 +20,70 @@
     margin: 0 auto;
     padding: 0 40px;
 
+    @media only screen and (max-width: 768px) {
+      padding: 0 17px;
+    }
+
     .top {
       padding: 7.5px 0;
       width: 100%;
-      height: 100px;
+      //height: 100px;
       display: flex;
       justify-content: center;
+      align-items: center;
+
+      .hamburger {
+        display: none;
+
+        @media only screen and (max-width: 768px) {
+          width: 100%;
+          height: 18px;
+          color: black;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          cursor: pointer;
+
+          span {
+            width: 25px;
+            height: 2px;
+            border-radius: 100px;
+            background-color: gray;
+            display: flex;
+          }
+        }
+      }
 
       .blank {
         width: 100%;
         max-width: 500px;
         display: flex;
+
+        @media only screen and (max-width: 768px) {
+          display: none;
+        }
       }
 
       .logo {
+        width: 500px;
+        height: 60px;
         display: flex;
         justify-content: center;
         align-items: center;
 
+        @media only screen and (max-width: 768px) {
+          height: 35px;
+        }
+
         img {
           width: 500px;
-          height: 100px;
-          object-fit: fill;
+          height: 60px;
+          object-fit: contain;
           display: flex;
+
+          @media only screen and (max-width: 768px) {
+            height: 35px;
+          }
         }
       }
 
@@ -48,22 +97,36 @@
           padding: 7.5px 8px;
           color: gray;
           display: flex;
+
+          @media only screen and (max-width: 768px) {
+            padding: 0;
+
+            &__person {
+              display: none;
+            }
+          }
         }
       }
     }
 
     .bottom {
-      margin-top: 10px;
+      //height: 20px;
+      //margin-top: 10px;
       display: flex;
       justify-content: center;
       align-items: center;
       a {
+        font-size: 15px;
         padding: 7.5px 15px;
         color: black;
         font-family: "Helvetica";
-        letter-spacing: 4px;
+        letter-spacing: 3px;
         text-decoration: none;
         text-transform: uppercase;
+      }
+
+      @media only screen and (max-width: 768px) {
+        display: none;
       }
     }
   }

@@ -5,6 +5,10 @@
   display: flex;
   justify-content: center;
 
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+
   .page-width {
     max-width: 1420px;
     width: 100%;

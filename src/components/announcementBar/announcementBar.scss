@@ -21,6 +21,11 @@
       align-items: center;
       cursor: pointer;
 
+      @media only screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+      }
+
       .text {
         color: white;
         text-decoration: none;
@@ -37,6 +42,10 @@
         color: white;
         text-decoration: underline;
         text-transform: uppercase;
+
+        @media only screen and (max-width: 768px) {
+          padding: 0;
+        }
       }
     }
   }

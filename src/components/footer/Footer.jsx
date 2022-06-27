@@ -3,7 +3,7 @@ import "./footer.scss";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import MailOutlineIcon from "@mui/icons-material/MailOutline";
+// import MailOutlineIcon from "@mui/icons-material/MailOutline";
 
 export default function Footer() {
   return (
