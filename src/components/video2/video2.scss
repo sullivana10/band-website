@@ -13,9 +13,14 @@
       height: 650px;
       object-fit: cover;
       object-position: top 100%;
+
+      @media only screen and (max-width: 768px) {
+        height: 425px;
+      }
     }
 
     .text {
+      width: 20%;
       position: absolute;
       bottom: -2%;
       left: 17%;
@@ -25,12 +30,21 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+
+      @media only screen and (max-width: 768px) {
+        width: 30%;
+      }
+
       .songName {
         margin: 0 0 8px 0;
         font-size: 50px;
         font-weight: 500;
         font-family: "SF Mono", Menlo, Consolas;
         letter-spacing: 2px;
+
+        @media only screen and (max-width: 768px) {
+          font-size: 25px;
+        }
       }
 
       .link {
@@ -38,7 +52,7 @@
       }
 
       .watch {
-        width: 60%;
+        width: 200px;
         padding: 9px 20px;
         color: white;
         font-weight: 700;
@@ -50,6 +64,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media only screen and (max-width: 768px) {
+          width: 165px;
+          font-size: 11px;
+          padding: 9px 17px;
+        }
 
         svg {
           margin-right: 6px;
