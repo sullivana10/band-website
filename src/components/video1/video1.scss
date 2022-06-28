@@ -13,14 +13,20 @@
       height: 650px;
       object-fit: cover;
       object-position: top 100%;
+
+      @media only screen and (max-width: 768px) {
+        height: 425px;
+      }
     }
 
     .text {
+      width: 100%;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       text-transform: uppercase;
+      text-align: center;
       font-family: "helvetica";
       display: flex;
       flex-direction: column;
@@ -32,12 +38,21 @@
         font-family: "SF Mono", Menlo, Consolas;
         letter-spacing: 6px;
         margin: 0;
+
+        @media only screen and (max-width: 768px) {
+          font-size: 40px;
+        }
       }
 
       .albumName {
         margin-top: 0;
         font-size: 20px;
         font-weight: 500;
+
+        @media only screen and (max-width: 768px) {
+          font-size: 17px;
+          margin: 10px 0;
+        }
       }
 
       .link {
@@ -56,6 +71,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media only screen and (max-width: 768px) {
+          font-size: 11px;
+          padding: 9px 17px;
+        }
 
         svg {
           margin-right: 6px;
