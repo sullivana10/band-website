@@ -6,9 +6,14 @@ export default function Tour() {
     <div className="tourAnnouncement">
       <div className="imgContainer">
         <img
-          src="assets/dead-matter.jpg"
+          src="assets/dead-short.jpg"
           alt="album cover"
           className="albumCover"
+        />
+        <img
+          src="assets/coldspots-single2.jpeg"
+          alt="album cover"
+          className="albumCover2"
         />
         <div className="text">
           <p className="tourName">twin cities takeover tour</p>
