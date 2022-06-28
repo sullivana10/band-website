@@ -4,6 +4,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media only screen and (max-width: 768px) {
+    padding: 0;
+  }
   .page-width {
     width: 100%;
     height: auto;
@@ -15,11 +19,20 @@
     justify-content: center;
     align-items: center;
 
+    @media only screen and (max-width: 768px) {
+      padding: 0 17px;
+    }
+
     .content {
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
+
+      @media only screen and (max-width: 768px) {
+        text-align: center;
+        flex-direction: column;
+      }
 
       .blank {
         width: 10%;
@@ -31,6 +44,11 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        @media only screen and (max-width: 768px) {
+          width: 100%;
+          padding: 15px 0;
+        }
 
         a {
           padding: 4px 0;
@@ -50,13 +68,38 @@
         flex-direction: column;
         justify-content: center;
 
-        .signUp {
+        @media only screen and (max-width: 768px) {
           width: 100%;
-          font-size: 12px;
-          font-family: "Helvetica";
-          margin: 0 0 20px;
-          text-transform: uppercase;
-          letter-spacing: 3px;
+          padding: 17px 0;
+          border-top: 1px solid rgba(128, 128, 128, 0.397);
+        }
+
+        .mobile {
+          display: flex;
+
+          .signUp {
+            width: 100%;
+            font-size: 12px;
+            font-family: "Helvetica";
+            margin: 0 0 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            display: flex;
+            align-items: center;
+
+            @media only screen and (max-width: 768px) {
+              padding-top: 5px;
+              justify-content: center;
+            }
+          }
+
+          svg {
+            display: none;
+
+            @media only screen and (max-width: 768px) {
+              display: flex;
+            }
+          }
         }
 
         .subscribe {
@@ -64,6 +107,10 @@
           font-size: 13px;
           font-family: "Helvetica";
           margin: 0 0 15px;
+
+          @media only screen and (max-width: 768px) {
+            display: none;
+          }
         }
 
         .form {
@@ -88,6 +135,10 @@
           outline: none;
           border-bottom: 2px solid black;
 
+          @media only screen and (max-width: 768px) {
+            display: none;
+          }
+
           &::placeholder {
             color: black;
             font-size: 12px;
@@ -97,6 +148,10 @@
         .iconContainer {
           margin-top: 30px;
           display: flex;
+
+          @media only screen and (max-width: 768px) {
+            display: none;
+          }
           .icon {
             padding-right: 10px;
           }

@@ -3,7 +3,7 @@ import "./footer.scss";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
-// import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 export default function Footer() {
   return (
@@ -32,7 +32,16 @@ export default function Footer() {
             </a>
           </div>
           <div className="right">
-            <p className="signUp">sign up and save</p>
+            {/* <div className="arrowContainer">
+              <div className="arrow">
+                <KeyboardArrowDownIcon sx={{ fontSize: 30 }} />
+              </div>
+            </div> */}
+            <div className="mobile">
+              <p className="signUp">sign up and save</p>
+              <KeyboardArrowDownIcon />
+            </div>
+
             <p className="subscribe">
               Subscribe to get special offers, free giveaways, and
               once-in-a-lifetime deals
