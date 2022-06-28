@@ -3,6 +3,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media only screen and (max-width: 768px) {
+    padding: 40px 0;
+  }
   .page-width {
     width: 100%;
     height: auto;
@@ -13,6 +17,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media only screen and (max-width: 768px) {
+      padding: 0 20px;
+    }
     .section-header {
       width: 100%;
       text-transform: uppercase;
@@ -20,15 +28,27 @@
       font-weight: 400;
       font-family: "SF Mono", Menlo, Consolas;
       letter-spacing: 3px;
+      text-align: center;
       display: flex;
       justify-content: center;
       align-items: center;
+
+      @media only screen and (max-width: 768px) {
+        margin-top: 0;
+      }
     }
 
     .content {
       width: 100%;
       display: flex;
       align-items: center;
+
+      @media only screen and (max-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 80vw);
+        gap: 5px;
+      }
 
       .container {
         width: 100%;
@@ -39,10 +59,17 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        @media only screen and (max-width: 768px) {
+          padding: 0;
+          margin: 0;
+        }
+
         .imgContainer {
           position: relative;
           width: 100%;
           cursor: pointer;
+
           img {
             max-height: 460px;
             width: 100%;
@@ -84,13 +111,16 @@
         }
 
         .description {
-          //height: 30px;
           margin: 0;
           text-transform: uppercase;
           font-size: 13px;
           font-family: "Helvetica";
           letter-spacing: 3px;
           text-align: center;
+
+          @media only screen and (max-width: 768px) {
+            font-size: 12px;
+          }
         }
 
         .price {
@@ -110,6 +140,12 @@
       text-transform: uppercase;
       letter-spacing: 3px;
       cursor: pointer;
+
+      @media only screen and (max-width: 768px) {
+        font-size: 11px;
+        padding: 9px 17px;
+        margin-top: 30px;
+      }
     }
   }
 }
