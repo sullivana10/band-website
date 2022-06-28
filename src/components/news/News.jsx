@@ -14,8 +14,10 @@ export default function News() {
             <div className="imgContainer">
               <img src="assets/flyer.jpg" alt="placeholder1" className="img1" />
             </div>
-            <p className="date">May 8, 2022</p>
-            <p className="articleTitle">Twin Cities Takeover Tour Begins</p>
+            <div className="text">
+              <p className="date">May 8, 2022</p>
+              <p className="articleTitle">Twin Cities Takeover Tour Begins</p>
+            </div>
           </div>
           <div className="container">
             <div className="imgContainer">
@@ -25,10 +27,12 @@ export default function News() {
                 className="img2"
               />
             </div>
-            <p className="date">Apr 10, 2020</p>
-            <p className="articleTitle">
-              Album Out Now + New Single Soul Conductor
-            </p>
+            <div className="text">
+              <p className="date">Apr 10, 2020</p>
+              <p className="articleTitle">
+                Album Out Now + New Single Soul Conductor
+              </p>
+            </div>
           </div>
           <div className="container">
             <div className="imgContainer">
@@ -38,8 +42,12 @@ export default function News() {
                 className="img2"
               />
             </div>
-            <p className="date">Mar 13, 2022</p>
-            <p className="articleTitle">New Single Cold Spots Available Now</p>
+            <div className="text">
+              <p className="date">Mar 13, 2022</p>
+              <p className="articleTitle">
+                New Single Cold Spots Available Now
+              </p>
+            </div>
           </div>
         </div>
       </div>
