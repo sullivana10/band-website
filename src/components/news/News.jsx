@@ -12,7 +12,7 @@ export default function News() {
         <div className="content">
           <div className="container">
             <div className="imgContainer">
-              <img src="assets/flyer.jpg" alt="placeholder1" className="img1" />
+              <img src="assets/flyer.jpg" alt="tour" className="img1" />
             </div>
             <div className="text">
               <p className="date">May 8, 2022</p>
@@ -23,7 +23,7 @@ export default function News() {
             <div className="imgContainer">
               <img
                 src="assets/album-available.jpg"
-                alt="placeholder2"
+                alt="album"
                 className="img2"
               />
             </div>
@@ -36,11 +36,7 @@ export default function News() {
           </div>
           <div className="container">
             <div className="imgContainer">
-              <img
-                src="assets/coldspots-single.jpeg"
-                alt="placeholder3"
-                className="img2"
-              />
+              <img src="assets/coldspots.jpeg" alt="single" className="img2" />
             </div>
             <div className="text">
               <p className="date">Mar 13, 2022</p>
