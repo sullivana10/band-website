@@ -4,12 +4,24 @@
   display: flex;
   justify-content: center;
 
+  @media only screen and (max-width: 768px) {
+    padding: 15% 0;
+  }
+
   .page-width {
     max-width: 1420px;
     width: 100%;
     margin: 0 auto;
     padding: 0 40px;
     display: flex;
+
+    @media only screen and (max-width: 768px) {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   .albumCover {
@@ -17,6 +29,10 @@
     //height: 674.19px;
     padding: 10px;
     display: flex;
+
+    @media only screen and (max-width: 768px) {
+      width: 75%;
+    }
 
     .albumImg {
       width: 100%;
@@ -35,18 +51,34 @@
     display: flex;
     flex-direction: column;
 
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      padding: 0;
+    }
+
     .title {
       text-transform: uppercase;
       font-family: "SF Mono", Menlo, Consolas;
       font-weight: 400;
       letter-spacing: 3px;
       margin: 0 0 20px 0;
+
+      @media only screen and (max-width: 768px) {
+        font-size: 26px;
+        margin-top: 40px;
+        text-align: center;
+        align-self: center;
+      }
     }
 
     .price {
       margin: 0 0 25px;
       color: #25894c;
       font-size: 17px;
+
+      @media only screen and (max-width: 768px) {
+        align-self: center;
+      }
     }
 
     .releaseDate {
@@ -64,6 +96,11 @@
 
     .songs {
       line-height: 1.4;
+
+      @media only screen and (max-width: 768px) {
+        padding-left: 25px;
+        font-size: 14px;
+      }
     }
 
     .cart {
@@ -94,6 +131,11 @@
     .installments {
       font-size: 13px;
       margin: 0;
+
+      @media only screen and (max-width: 768px) {
+        align-self: center;
+        text-align: center;
+      }
 
       span {
         text-decoration: underline;
