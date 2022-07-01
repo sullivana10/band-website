@@ -45,9 +45,7 @@ export default function Header() {
             about
           </a>
           <div className="dropdown">
-            <a href="/" className="navLink">
-              music
-            </a>
+            <button className="navLink">music</button>
             <div className="dropdown-content">
               <a
                 href="https://open.spotify.com/artist/7jbkCD5BIRbdCLOz5J6S1Y"

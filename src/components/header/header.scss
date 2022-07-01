@@ -141,6 +141,12 @@
         display: inline-block;
         position: relative;
 
+        button {
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+        }
+
         &:hover .dropdown-content {
           display: block;
           opacity: 1;
