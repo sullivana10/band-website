@@ -19,7 +19,17 @@ export default function Cds() {
           </div>
           <h3 className="albumName">connect</h3>
           <p className="type">Digipak</p>
-          <button className="buy">buy now</button>
+          <button
+            className="buy"
+            onClick={(event) =>
+              window.open(
+                "https://bythethousands.bigcartel.com/product/connect-cd",
+                "_blank"
+              )
+            }
+          >
+            buy now
+          </button>
         </div>
         <div className="container">
           <div className="imgContainer">

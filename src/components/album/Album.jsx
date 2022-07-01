@@ -31,7 +31,17 @@ export default function Album() {
             <li>Deep Gloom - 3:35</li>
           </ol>
           <button className="cart">add to cart</button>
-          <button className="pay">Buy Now </button>
+          <button
+            onClick={(event) =>
+              window.open(
+                "https://bythethousands.bigcartel.com/product/dead-matter-cd",
+                "_blank"
+              )
+            }
+            className="pay"
+          >
+            Buy Now{" "}
+          </button>
           <p className="options">More payment options</p>
           <p className="installments">
             Pay in 4 interest-free installments for orders over $50 with shop

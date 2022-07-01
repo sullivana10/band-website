@@ -8,7 +8,15 @@ export default function Apparel() {
         <h2 className="section-header">by the thousands apparel</h2>
         <div className="content">
           <div className="container">
-            <div className="imgContainer">
+            <div
+              className="imgContainer"
+              onClick={(event) =>
+                window.open(
+                  "https://bythethousands.bigcartel.com/product/horror-tee",
+                  "_blank"
+                )
+              }
+            >
               <img
                 src="assets/skull-front-3.4.jpeg"
                 alt="skullFront"
@@ -24,7 +32,15 @@ export default function Apparel() {
             <p className="price">$25.00</p>
           </div>
           <div className="container">
-            <div className="imgContainer">
+            <div
+              className="imgContainer"
+              onClick={(event) =>
+                window.open(
+                  "https://bythethousands.bigcartel.com/product/acid-wash-tee",
+                  "_blank"
+                )
+              }
+            >
               <img
                 src="assets/tiedye-3.4.jpeg"
                 alt="tiedye"
