@@ -1,5 +1,7 @@
+import { useState } from "react";
 import "./App.css";
 import Header from "./components/header/Header";
+import Menu from "./components/menu/Menu";
 import Toolbar from "./components/toolbar/Toolbar";
 import AnnouncementBar from "./components/announcementBar/AnnouncementBar";
 import Tour from "./components/tour/Tour";
@@ -12,10 +14,12 @@ import News from "./components/news/News";
 import Footer from "./components/footer/Footer";
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="App">
       <Toolbar />
-      <Header />
+      <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <AnnouncementBar />
       <Tour />
       <Album />

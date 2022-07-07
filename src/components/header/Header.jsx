@@ -3,12 +3,12 @@ import "./header.scss";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import LocalMallOutlinedIcon from "@mui/icons-material/LocalMallOutlined";
 
-export default function Header() {
+export default function Header({ menuOpen, setMenuOpen }) {
   return (
     <div className="header">
       <div className="page-width">
         <div className="top">
-          <div className="hamburger">
+          <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
             <span className="line1"></span>
             <span className="line2"></span>
             <span className="line3"></span>
