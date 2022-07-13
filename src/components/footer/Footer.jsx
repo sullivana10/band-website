@@ -38,6 +38,7 @@ export default function Footer() {
               </div>
             </div> */}
             <div className="mobile">
+              <div className="blank"></div>
               <p className="signUp">sign up and save</p>
               <KeyboardArrowDownIcon />
             </div>

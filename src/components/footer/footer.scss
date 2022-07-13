@@ -77,8 +77,20 @@
         .mobile {
           display: flex;
 
+          @media only screen and (max-width: 768px) {
+            justify-content: space-between;
+          }
+
+          .blank {
+            width: 0px;
+
+            @media only screen and (max-width: 768px) {
+              width: 24px;
+            }
+          }
+
           .signUp {
-            width: 100%;
+            //width: 100%;
             font-size: 12px;
             font-family: "Helvetica";
             margin: 0 0 20px;
